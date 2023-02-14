@@ -9,8 +9,7 @@
 }
 
 .about_cta, .Contact_cta, .favorites_cta {
-    background-color: #5C6F73;
-    color: ivory;
+    color: black;
     font-size: 1em;
     padding: 8px 30px;
 }

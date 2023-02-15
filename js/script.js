@@ -12,3 +12,4 @@ console.log(products);
 console.log(response);
 }
 getProducts(baseUrl);
+product();

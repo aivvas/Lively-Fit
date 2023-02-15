@@ -35,6 +35,8 @@ console.log(response);
 getProducts(baseUrl);
 */
 
+
+
 let request = new XMLHttpRequest
 request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2");
 request.send();

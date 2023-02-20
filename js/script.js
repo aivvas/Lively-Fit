@@ -42,4 +42,5 @@ request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2");
 request.send();
 request.onload = () => {
     console.log(request);
+    console.log(request.namespace);
 }

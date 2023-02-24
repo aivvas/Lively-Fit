@@ -21,8 +21,5 @@
 }
 
 .item_active, .item {
-    width: 100%;
-    max-width: 310px;
-    height: 400px;
-    border-radius: 20px;
+  
 }

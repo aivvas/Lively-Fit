@@ -21,7 +21,7 @@
 }
 
 
-.item_active > img, .item > img{
+.item-active > img, .item > img{
     width: 300px;  
     height: auto;  
     text-align: center;  

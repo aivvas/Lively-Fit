@@ -20,8 +20,9 @@
     margin-left: 200px;
 }
 
-.item_active, .item {
-    width: 100%;
-    max-width: 310px;
-    height: auto;
+.item_active, .item, .item1 {
+    width: 300px;  
+    height: auto;  
+    text-align: center;  
+    padding: 15px; 
 }

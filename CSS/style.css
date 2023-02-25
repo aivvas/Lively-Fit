@@ -22,9 +22,7 @@
     margin-bottom: 0px;
 }
 
-.h1-header {
-    text-align: center;
-}
+
 
 .p-index {
     width: 100%;
@@ -44,3 +42,6 @@
     padding: 15px; 
 }
 
+#myCarousel {
+    width: 300px;
+}

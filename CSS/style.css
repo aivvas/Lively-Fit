@@ -18,6 +18,17 @@
     font-size: 2,7em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 200px;
+    color: #666666;
+    margin-bottom: 0px;
+}
+
+.p-index {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    max-width: 1028px;
+    height: auto;
+    border-radius: 25px;
 }
 
 

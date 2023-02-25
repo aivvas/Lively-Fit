@@ -42,6 +42,7 @@
 
 #send:hover {
     background-color: #666666;
+    left: 120px;
 }
 
 .item-active > img, .item > img{

@@ -32,6 +32,7 @@
     height: auto;
     border-radius: 25px;
     text-align: center;
+    left: 198px;
 }
 
 
@@ -44,5 +45,5 @@
 
 #myCarousel {
     width: 300px;
-    left: 120px;
+    left: 198px;
 }

@@ -24,7 +24,7 @@
     margin-bottom: 0px;
 }
 
-.p-index {
+.p-index, .p-contact {
     width: 100%;
     margin-bottom: 100px;
     margin-top: 50px;
@@ -34,6 +34,7 @@
     text-align: center;
     left: 198px;
 }
+
 
 
 .item-active > img, .item > img{

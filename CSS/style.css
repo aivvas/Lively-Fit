@@ -24,7 +24,7 @@
     margin-bottom: 0px;
 }
 
-.p-index, .p-contact {
+.p-index, .p-contact, p.about, p.where {
     width: 100%;
     margin-bottom: 100px;
     margin-top: 50px;

@@ -35,7 +35,14 @@
     left: 198px;
 }
 
+#question-box, #send {
+    border: none;
+    border-radius: 10px;
+}
 
+#send:hover {
+    background-color: #666666;
+}
 
 .item-active > img, .item > img{
     width: 300px;  

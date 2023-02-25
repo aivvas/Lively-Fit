@@ -10,10 +10,9 @@
 
 .about_cta, .Contact_cta, .favorites_cta {
     color: black;
-    font-size: 1em;
+    font-size: 1.7em;
     padding: 8px 30px;
     position:relative;
-    left: 80px;
     top: 40px;
 }
 

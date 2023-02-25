@@ -36,6 +36,7 @@
 }
 
 #question-box, #send {
+    font-size: 1.2px;
     border: none;
     border-radius: 100px;
 }

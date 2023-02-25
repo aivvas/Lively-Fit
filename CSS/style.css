@@ -22,7 +22,9 @@
     margin-bottom: 0px;
 }
 
-
+hr{
+    color: black;
+}
 
 .p-index {
     width: 100%;

@@ -98,3 +98,4 @@ function validContact() {
   }
 };
 
+validContact();

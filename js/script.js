@@ -93,6 +93,10 @@ function getAPIData(url, targetElement) {
 
 getAPIData("http://localhost/lively-fit/wp-json/wp/v2/posts/80", APIAbout); 
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/85", APISpirituality);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/89", APIJourney);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/92", APIMeditation);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/95", APIcontainer);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/101", APILevel);
 
 
 

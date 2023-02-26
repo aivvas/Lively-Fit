@@ -57,6 +57,7 @@ request.onload = () => {
     console.log(reponseitems.title);
     console.log(reponseitems.content);
 }; */
+const APIcontainer = document.getElementById("apiresults")
 
 let request = new XMLHttpRequest();
 request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts");

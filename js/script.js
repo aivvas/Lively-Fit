@@ -60,12 +60,12 @@ function getAPIData(url, targetElement) {
   };
 }
 
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", APILevel);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIcontainer);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", APIMeditation);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APIJourney);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=5", APISpirituality);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=6", APIAbout);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=0", APILevel);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", APIcontainer);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIMeditation);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", APIJourney);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APISpirituality);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=5", APIAbout);
 
 
 

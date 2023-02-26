@@ -60,7 +60,26 @@ getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=3", APIJou
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=4", APISpirituality);
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=5", APIAbout);
 
-
+function getAPIData(url, targetElement) {
+  let request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.send();
+  request.onload = () => {
+    if (request.status === 200) {
+      const response = JSON.parse(request.responseText);
+      const responseitems = response[0];
+      const htmlString = `
+        <div>
+          <h2>${responseitems.title.rendered}</h2>
+          <div>${responseitems.content.rendered}</div>
+        </div>
+      `;
+      targetElement.innerHTML = htmlString;
+    } else {
+      console.error(`Error fetching data from ${url}. Status code: ${request.status}.`);
+    }
+  };
+}
 
 
 

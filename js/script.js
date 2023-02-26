@@ -20,21 +20,6 @@ request.onload = () => {
     APIcontainer.innerHTML = htmlString;
 };
 
-let request = new XMLHttpRequest();
-request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=5");
-request.send();
-request.onload = () => {
-    const response = JSON.parse(request.responseText);
-    const responseitems = response[0];
-    const APIAbout = document.getElementById("aboutAPI");
-    const htmlString = `
-        <div>
-            <h2>${responseitems.title.rendered}</h2>
-            <div>${responseitems.content.rendered}</div>
-        </div>
-    `;
-    APIAbout.innerHTML = htmlString;
-};
 
 
 

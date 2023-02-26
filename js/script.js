@@ -33,7 +33,7 @@ request.onload = () => {
             <div>${responseitems.content.rendered}</div>
         </div>
     `;
-    APIcontainer.innerHTML = htmlString;
+    APIAbout.innerHTML = htmlString;
 };
 
 

@@ -34,7 +34,7 @@ request.onload = () => {
         </div>
     `;
     APIAbout.innerHTML = htmlString;
-}; */
+}; 
 
 const APIcontainer = document.getElementById("apiresults");
 const APISpirituality = document.getElementById("spiritualityAPI");
@@ -65,9 +65,28 @@ getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", APIcon
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIMeditation);
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", APIJourney);
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APISpirituality);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/${postId80}", APIAbout);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/${postId80}", APIAbout);*/
 
 
+const APIcontainer = document.getElementById("apiresults");
+
+function getAPIData(url, targetElement) {
+  let request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.send();
+  request.onload = () => {
+    const response = JSON.parse(request.responseText);
+    const htmlString = `
+      <div>
+        <h2>${response.title.rendered}</h2>
+        <div>${response.content.rendered}</div>
+      </div>
+    `;
+    targetElement.innerHTML = htmlString;
+  };
+}
+
+getAPIData("http://localhost/lively-fit/wp-json/wp/v2/posts/80", APIcontainer); // Replace 123 with the ID of the post you want to retrieve
 
 
 function validContact() {

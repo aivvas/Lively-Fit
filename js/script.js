@@ -58,7 +58,7 @@ request.onload = () => {
 }; */
 
 function validContact() {
-  var name = document.getElementsByClassName("subject");
+  var name = document.getElementsByClassName("name");
   var email = document.getElementsByClassName("email");
   var subject = document.getElementsByClassName("subject");
   var message = document.getElementsByClassName("message");
@@ -67,13 +67,13 @@ function validContact() {
   if (name === "") {
     error.push("Name is required");
   } else if (name.lenght < 5) {
-    errors.push("Please fill in your full name");
+    error.push("Please fill in your full name");
   }
   
   if (email === "") {
     error.push("Email is required");
   } else if (!/\S+@\S+\.\S+/.test(email)) {
-    errors.push("Email is not valid");
+    error.push("Email is not valid");
   }
   
   if (subject === "") {
@@ -91,7 +91,7 @@ function validContact() {
   if (error.length > 0) {
     var errorDiv = document.createElement("div");
     errorDiv.style.color = "red";
-    errorDiv.innerHTML = errors.join("<br>");
+    errorDiv.innerHTML = error.join("<br>");
     document.getElementsByTagName("form")[0].appendChild(errorDiv);
   } else {
     alert("Form submitted successfully");

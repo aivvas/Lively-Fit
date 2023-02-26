@@ -58,10 +58,10 @@ request.onload = () => {
 }; */
 
 function validContact() {
-  var name = document.getElementsByClassName("name")[0].value;
-  var email = document.getElementsByClassName("email")[0].value;
-  var subject = document.getElementsByClassName("subject")[0].value;
-  var message = document.getElementsByClassName("message")[0].value;
+  var name = document.getElementsByClassName("name");
+  var email = document.getElementsByClassName("email");
+  var subject = document.getElementsByClassName("subject");
+  var message = document.getElementsByClassName("message");
   var error = [];
 
   if (name === "") {

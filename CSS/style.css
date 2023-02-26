@@ -56,7 +56,7 @@
     left: 198px;
 }
 
-.name, .email, .subject, .submit {
+.name, .email, .subject, .message, .submit {
     margin: 25px;
     padding: 13px;
 }

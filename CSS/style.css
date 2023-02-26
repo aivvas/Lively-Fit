@@ -55,3 +55,8 @@
     width: 300px;
     left: 198px;
 }
+
+.name, .email, .subject, .submit {
+    margin: 25px;
+    padding: 13px;
+}

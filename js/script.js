@@ -36,6 +36,13 @@ request.onload = () => {
     APIAbout.innerHTML = htmlString;
 }; */
 
+const APIcontainer = document.getElementById("apiresults");
+const APISpirituality = document.getElementById("spiritualityAPI");
+const APIAbout = document.getElementById("aboutAPI");
+const APIJourney = document.getElementById("journeyAPI");
+const APIMeditation = document.getElementById("APIMeditation");
+const APILevel = document.getElementById("APILevelUP");
+
 function getAPIData(url, targetElement) {
   let request = new XMLHttpRequest();
   request.open("GET", url);
@@ -53,33 +60,13 @@ function getAPIData(url, targetElement) {
   };
 }
 
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=0", APILevel);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=1", APIcontainer);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=2", APIMeditation);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=3", APIJourney);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=4", APISpirituality);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=5", APIAbout);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=0", APILevel);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", APIcontainer);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIMeditation);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", APIJourney);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APISpirituality);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=5", APIAbout);
 
-function getAPIData(url, targetElement) {
-  let request = new XMLHttpRequest();
-  request.open("GET", url);
-  request.send();
-  request.onload = () => {
-    if (request.status === 200) {
-      const response = JSON.parse(request.responseText);
-      const responseitems = response[0];
-      const htmlString = `
-        <div>
-          <h2>${responseitems.title.rendered}</h2>
-          <div>${responseitems.content.rendered}</div>
-        </div>
-      `;
-      targetElement.innerHTML = htmlString;
-    } else {
-      console.error(`Error fetching data from ${url}. Status code: ${request.status}.`);
-    }
-  };
-}
 
 
 

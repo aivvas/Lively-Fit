@@ -4,7 +4,7 @@ const APIcontainer = document.getElementById("apiresults")
 const APISpirituality = document.getElementById("spiritualityAPI")
 
 let request = new XMLHttpRequest();
-request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/pages");
+request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=1");
 request.send();
 request.onload = () => {
     const response = JSON.parse(request.responseText);
@@ -12,8 +12,8 @@ request.onload = () => {
     const APIcontainer = document.getElementById("apiresults");
     const htmlString = `
         <div>
-            <h2>${responseitems[i].title.rendered}</h2>
-            <div>${responseitems[i].content.rendered}</div>
+            <h2>${responseitems.title.rendered}</h2>
+            <div>${responseitems.content.rendered}</div>
         </div>
     `;
     APIcontainer.innerHTML = htmlString;

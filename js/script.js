@@ -33,7 +33,7 @@ console.log(products);
 console.log(response);
 }
 getProducts(baseUrl);
-*/
+
 
 
 
@@ -43,9 +43,9 @@ request.send();
 request.onload = () => {
     console.log(request);
     console.log(request.posts);
-}
+}*/
 
-/*
+
 let request = new XMLHttpRequest();
 request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts");
 request.send();
@@ -55,7 +55,12 @@ request.onload = () => {
     console.log(reponseitems.id);
     console.log(reponseitems.title);
     console.log(reponseitems.content);
-}; */
+}; 
+
+
+
+
+
 
 function validContact() {
   var name = document.getElementsByClassName("name");

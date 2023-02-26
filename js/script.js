@@ -58,15 +58,15 @@ request.onload = () => {
 }; */
 
 function validContact() {
-  var name = document.getElementsByClassName("name");
-  var email = document.getElementsByClassName("email");
-  var subject = document.getElementsByClassName("subject");
-  var message = document.getElementsByClassName("message");
+  var name = document.getElementsByClassName("name")[0].value;
+  var email = document.getElementsByClassName("email")[0].value;
+  var subject = document.getElementsByClassName("subject")[0].value;
+  var message = document.getElementsByClassName("message")[0].value;
   var error = [];
 
   if (name === "") {
     error.push("Name is required");
-  } else if (name.lenght < 5) {
+  } else if (name.length < 5) {
     error.push("Please fill in your full name");
   }
   
@@ -78,14 +78,14 @@ function validContact() {
   
   if (subject === "") {
     error.push("Please fill in your subject");
-  } else if (subject.lenght < 15) {
-    error.push("Should at least be 15 characters long")
+  } else if (subject.length < 15) {
+    error.push("Should be at least 15 characters long")
   }
 
   if (message === "") {
     error.push("Message is required to submit this form");
-  } else if (message.lenght < 25) {
-    error.push("Your message should at least be 25 characters long")
+  } else if (message.length < 25) {
+    error.push("Your message should be at least 25 characters long")
   }
 
   if (error.length > 0) {
@@ -98,4 +98,3 @@ function validContact() {
   }
 };
 
-validContact();

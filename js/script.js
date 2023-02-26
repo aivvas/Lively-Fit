@@ -97,3 +97,5 @@ function validContact() {
     alert("Form submitted successfully");
   }
 };
+
+validContact();

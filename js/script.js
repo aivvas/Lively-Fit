@@ -43,8 +43,9 @@ request.send();
 request.onload = () => {
     console.log(request);
     console.log(request.posts);
-}*/
+}
 
+const APIcontainer = document.getElementById("apiresults")
 
 let request = new XMLHttpRequest();
 request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts");
@@ -55,9 +56,26 @@ request.onload = () => {
     console.log(reponseitems.id);
     console.log(reponseitems.title);
     console.log(reponseitems.content);
-}; 
+}; */
 
 
+let request = new XMLHttpRequest();
+request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts");
+request.send();
+request.onload = () => {
+    const response = JSON.parse(request.responseText);
+    const responseitems = response[0];
+    const APIcontainer = document.getElementById("apiresults");
+    const idElement = document.createElement('p');
+    idElement.innerText = `Post ID: ${responseitems.id}`;
+    const titleElement = document.createElement('h2');
+    titleElement.innerText = responseitems.title.rendered;
+    const contentElement = document.createElement('div');
+    contentElement.innerHTML = responseitems.content.rendered;
+    APIcontainer.appendChild(idElement);
+    APIcontainer.appendChild(titleElement);
+    APIcontainer.appendChild(contentElement);
+};
 
 
 

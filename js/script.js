@@ -69,7 +69,6 @@ request.onload = () => {
     const APIcontainer = document.getElementById("apiresults");
     const htmlString = `
         <div>
-            <p>Post ID: ${responseitems.id}</p>
             <h2>${responseitems.title.rendered}</h2>
             <div>${responseitems.content.rendered}</div>
         </div>

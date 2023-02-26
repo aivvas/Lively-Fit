@@ -65,25 +65,25 @@ function validContact() {
   var error = [];
 
   if (name === "") {
-    errors.push("Name is required");
+    error.push("Name is required");
   } else if (name.lenght < 5) {
     errors.push("Please fill in your full name");
   }
   
   if (email === "") {
-    errors.push("Email is required");
+    error.push("Email is required");
   } else if (!/\S+@\S+\.\S+/.test(email)) {
     errors.push("Email is not valid");
   }
   
   if (subject === "") {
-    errors.push("Please fill in your subject");
+    error.push("Please fill in your subject");
   } else if (subject.lenght < 15) {
     error.push("Should at least be 15 characters long")
   }
 
   if (message === "") {
-    errors.push("Message is required to submit this form");
+    error.push("Message is required to submit this form");
   } else if (message.lenght < 25) {
     error.push("Your message should at least be 25 characters long")
   }
@@ -96,4 +96,4 @@ function validContact() {
   } else {
     alert("Form submitted successfully");
   }
-}
+};

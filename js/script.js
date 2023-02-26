@@ -62,10 +62,10 @@ function getAPIData(url, targetElement) {
 
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=0", document.getElementById("APILevelUP"));
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", document.getElementById("apiresults"));
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIMeditation);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", APIJourney);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APISpirituality);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=5", APIAbout);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", document.getElementById("APIMeditation"));
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", document.getElementById("journeyAPI"));
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", document.getElementById("spiritualityAPI"));
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=5", document.getElementById("aboutAPI"));
 
 
 

@@ -39,6 +39,9 @@ request.onload = () => {
 const APIcontainer = document.getElementById("apiresults");
 const APISpirituality = document.getElementById("spiritualityAPI");
 const APIAbout = document.getElementById("aboutAPI");
+const APIJourney = document.getElementById("journeyAPI");
+const APIMeditation = document.getElementById("APIMeditation");
+const APILevel = document.getElementById("APILevelUP");
 
 function getAPIData(url, targetElement) {
   let request = new XMLHttpRequest();

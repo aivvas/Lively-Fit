@@ -1,5 +1,5 @@
 
-
+/*
 const APIcontainer = document.getElementById("apiresults")
 const APISpirituality = document.getElementById("spiritualityAPI")
 const APIAbout = document.getElementById("aboutAPI")
@@ -20,6 +20,45 @@ request.onload = () => {
     APIcontainer.innerHTML = htmlString;
 };
 
+let request = new XMLHttpRequest();
+request.open("GET", "http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=5");
+request.send();
+request.onload = () => {
+    const response = JSON.parse(request.responseText);
+    const responseitems = response[0];
+    const APIAbout = document.getElementById("aboutAPI");
+    const htmlString = `
+        <div>
+            <h2>${responseitems.title.rendered}</h2>
+            <div>${responseitems.content.rendered}</div>
+        </div>
+    `;
+    APIAbout.innerHTML = htmlString;
+}; */
+
+const APIcontainer = document.getElementById("apiresults");
+const APISpirituality = document.getElementById("spiritualityAPI");
+const APIAbout = document.getElementById("aboutAPI");
+
+function getAPIData(url, targetElement) {
+  let request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.send();
+  request.onload = () => {
+    const response = JSON.parse(request.responseText);
+    const responseitems = response[0];
+    const htmlString = `
+      <div>
+        <h2>${responseitems.title.rendered}</h2>
+        <div>${responseitems.content.rendered}</div>
+      </div>
+    `;
+    targetElement.innerHTML = htmlString;
+  };
+}
+
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=1", APIcontainer);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_page=5", APIAbout);
 
 
 

@@ -65,7 +65,7 @@ getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", APIcon
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIMeditation);
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=3", APIJourney);
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APISpirituality);
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/${80}", APIAbout);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/${post80}", APIAbout);
 
 
 

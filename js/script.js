@@ -72,7 +72,7 @@ function validContact() {
   
   if (email === "") {
     error.push("Email is required");
-  } else if (!/\S+@\S+\.\S+/(email)) {
+  } else if (!/\S+@\S+\.\S+/.test(email)) {
     error.push("Email is not valid");
   }
   

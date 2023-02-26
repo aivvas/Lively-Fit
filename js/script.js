@@ -69,6 +69,7 @@ getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/${postId80}", APIAb
 
 
 const APIcontainer = document.getElementById("apiresults");
+const APIAbout = document.getElementById("aboutAPI");
 
 function getAPIData(url, targetElement) {
   let request = new XMLHttpRequest();
@@ -86,7 +87,7 @@ function getAPIData(url, targetElement) {
   };
 }
 
-getAPIData("http://localhost/lively-fit/wp-json/wp/v2/posts/80", APIcontainer); // Replace 123 with the ID of the post you want to retrieve
+getAPIData("http://localhost/lively-fit/wp-json/wp/v2/posts/80", APIAbout); // Replace 123 with the ID of the post you want to retrieve
 
 
 function validContact() {

@@ -69,7 +69,11 @@ getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/${postId80}", APIAb
 
 
 const APIcontainer = document.getElementById("apiresults");
+const APISpirituality = document.getElementById("spiritualityAPI");
 const APIAbout = document.getElementById("aboutAPI");
+const APIJourney = document.getElementById("journeyAPI");
+const APIMeditation = document.getElementById("APIMeditation");
+const APILevel = document.getElementById("APILevelUP");
 
 function getAPIData(url, targetElement) {
   let request = new XMLHttpRequest();
@@ -87,7 +91,9 @@ function getAPIData(url, targetElement) {
   };
 }
 
-getAPIData("http://localhost/lively-fit/wp-json/wp/v2/posts/80", APIAbout); // Replace 123 with the ID of the post you want to retrieve
+getAPIData("http://localhost/lively-fit/wp-json/wp/v2/posts/80", APIAbout); 
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts/85", APISpirituality);
+
 
 
 function validContact() {

@@ -12,8 +12,8 @@ request.onload = () => {
     const APIcontainer = document.getElementById("apiresults");
     const htmlString = `
         <div>
-            <h2>${responseitems.title.page=1}</h2>
-            <div>${responseitems.content.page=1}</div>
+            <h2>${responseitems.title.rendered}</h2>
+            <div>${responseitems.content.rendered}</div>
         </div>
     `;
     APIcontainer.innerHTML = htmlString;

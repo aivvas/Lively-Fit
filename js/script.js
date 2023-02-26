@@ -60,7 +60,7 @@ function getAPIData(url, targetElement) {
   };
 }
 
-getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=1", APIcontainer);
+getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=2", APIcontainer);
 getAPIData("http://localhost/lively-fit//wp-json/wp/v2/posts?per_post=4", APIAbout);
 
 
